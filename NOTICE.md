@@ -31,6 +31,13 @@ are reserved unless stated otherwise:
   CC BY 2.0
   ([Wikimedia Commons](https://commons.wikimedia.org/wiki/File:The_Cathedral_by_Auguste_Rodin,_Rodin_Museum,_Paris.jpg)).
   The photograph is included unmodified, with attribution next to the image.
+- **Vermeer, *The Geographer* (1669):** Städel Museum, Frankfurt am Main (inv. 1149). The
+  painting is in the public domain; the reproduction comes from
+  [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:J._VERMEER_-_El_ge%C3%B3grafo_(Museo_St%C3%A4del,_Fr%C3%A1ncfort_del_Meno,_1669).jpg)
+  (Public Domain Mark) and was only resized for the web. Collection page:
+  <https://sammlung.staedelmuseum.de/en/work/the-geographer>.
+- **Knowledge paths diagram (EN/ES):** original conceptual illustration created for the essay
+  "When Understanding Isn't Enough". It is an explanatory synthesis, not a validated model.
 
 ## Fonts and libraries
 
