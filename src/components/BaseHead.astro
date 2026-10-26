@@ -123,11 +123,14 @@ const siteName = SITE_CONFIG.title[locale];
 <meta name="twitter:image:alt" content={imageAlt} />
 
 <script is:inline>
+    // Light is the default. Dark is used only if the reader chose it with the toggle
+    // (the choice is stored by the toggle itself); the system preference is ignored.
     const getTheme = () => {
-        if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
-            return localStorage.getItem("theme");
+        try {
+            return localStorage.getItem("theme") === "dark" ? "dark" : "light";
+        } catch {
+            return "light";
         }
-        return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     };
 
     const applyTheme = (theme, doc = document) => {
@@ -143,11 +146,6 @@ const siteName = SITE_CONFIG.title[locale];
             doc.head.appendChild(metaThemeColor);
         }
         metaThemeColor.content = themeColor;
-
-        // Save preference
-        if (typeof localStorage !== "undefined") {
-            localStorage.setItem("theme", theme);
-        }
     };
 
     // Initialize theme
