@@ -1,0 +1,20 @@
+---
+import HarmonicSystemSVG from "./HarmonicSystemSVG.astro";
+---
+
+<section
+    class="hidden md:flex absolute right-0 top-0 h-full w-[48%] lg:w-[48%] bg-grid flex-col justify-center items-center z-0 transition-all duration-500 slanted-bg"
+>
+    <div
+        class="relative w-full max-w-[340px] aspect-square flex items-center justify-center group"
+    >
+        <HarmonicSystemSVG />
+
+        <div
+            class="absolute bottom-[-40px] font-mono text-[9px] text-zinc-400 dark:text-zinc-500 tracking-widest uppercase"
+        >
+            <span id="label-phase">Δ_PHASE: 0.00</span>
+        </div>
+    </div>
+</section>
+

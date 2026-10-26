@@ -1,0 +1,11 @@
+---
+import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
+import PageView from "@/views/PageView.astro";
+import { pagePaths } from "@/utils/routes";
+
+export const getStaticPaths = (() => pagePaths("es")) satisfies GetStaticPaths;
+
+const { page } = Astro.props as InferGetStaticPropsType<typeof getStaticPaths>;
+---
+
+<PageView locale="es" page={page} />

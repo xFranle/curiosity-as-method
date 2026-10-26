@@ -1,0 +1,186 @@
+---
+import BaseHead from "@/components/BaseHead.astro";
+import BlurBackground from "@/components/ui/BlurBackground.astro";
+import Navigation from "@/components/ui/Navigation";
+import "@/styles/global.css";
+import "@fontsource-variable/geist";
+import "@fontsource-variable/geist-mono";
+import { ClientRouter } from "astro:transitions";
+import { DEFAULT_LOCALE, SITE_CONFIG, type Locale } from "@/config";
+import { getLocaleFromPath, localizePath, t } from "@/i18n";
+import type { Alternates } from "@/utils/content";
+import { defaultCardPath } from "@/utils/social-card";
+import ClickSpark from "@/components/ui/ClickSpark";
+import ShinyText from "@/components/ui/ShinyText.astro";
+
+interface Props {
+    title: string;
+    description: string;
+    /** Language of the page. Defaults to the one encoded in the URL. */
+    locale?: Locale;
+    /** Path of this page in each language where it exists (drives hreflang and the language switcher). */
+    alternates?: Alternates;
+    /** Social card for Open Graph / Twitter (path under the site or absolute URL). */
+    image?: string;
+    imageAlt?: string;
+    type?: "website" | "article";
+    publishDate?: Date;
+    modifiedDate?: Date;
+    authorName?: string;
+    tags?: string[];
+    noindex?: boolean;
+}
+
+const {
+    title,
+    description,
+    locale = (Astro.currentLocale as Locale | undefined) ?? getLocaleFromPath(Astro.url.pathname),
+    alternates,
+    image,
+    imageAlt,
+    type = "website",
+    publishDate,
+    modifiedDate,
+    authorName,
+    tags,
+    noindex,
+} = Astro.props;
+
+const origin = Astro.site || new URL(SITE_CONFIG.site);
+const absolute = (path: string) => new URL(path, origin).toString();
+const otherLocale: Locale = locale === DEFAULT_LOCALE ? "es" : DEFAULT_LOCALE;
+
+// The page's own language version is always an alternate of itself.
+const pageAlternates: Alternates = alternates ?? { [locale]: Astro.url.pathname };
+const articleImage = image ?? defaultCardPath(locale);
+---
+
+<!doctype html>
+<html lang={locale}>
+    <head>
+        <BaseHead
+            title={title}
+            description={description}
+            locale={locale}
+            alternates={pageAlternates}
+            image={image}
+            imageAlt={imageAlt}
+            type={type}
+            publishDate={publishDate}
+            modifiedDate={modifiedDate}
+            tags={tags}
+            noindex={noindex}
+        />
+        <ClientRouter />
+        {
+            publishDate && (
+                <script
+                    type="application/ld+json"
+                    set:html={JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Article",
+                        headline: title,
+                        description: description,
+                        inLanguage: locale,
+                        author: {
+                            "@type": "Person",
+                            name: authorName || SITE_CONFIG.author,
+                            url: absolute(localizePath(locale, "/about/")),
+                        },
+                        datePublished: publishDate.toISOString(),
+                        dateModified: (modifiedDate || publishDate).toISOString(),
+                        image: absolute(articleImage),
+                        publisher: {
+                            "@type": "Organization",
+                            name: SITE_CONFIG.title[locale],
+                            logo: {
+                                "@type": "ImageObject",
+                                url: absolute("/favicon.svg"),
+                            },
+                        },
+                        mainEntityOfPage: {
+                            "@type": "WebPage",
+                            "@id": absolute(Astro.url.pathname),
+                        },
+                        ...(pageAlternates[otherLocale]
+                            ? { workTranslation: { "@type": "Article", inLanguage: otherLocale, url: absolute(pageAlternates[otherLocale]!) } }
+                            : {}),
+                    })}
+                />
+            )
+        }
+    </head>
+    <body class="min-h-screen relative">
+        <a
+            href="#main-content"
+            class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:px-3 focus:py-2 focus:rounded-md focus:bg-white focus:text-black dark:focus:bg-black dark:focus:text-white font-mono text-xs uppercase tracking-widest"
+        >
+            {t(locale, "meta.skipToContent")}
+        </a>
+        <div class="vignette"></div>
+        <BlurBackground />
+
+        <Navigation
+            client:load
+            transition:persist="navigation"
+            title={SITE_CONFIG.title[locale]}
+            logoSrc={SITE_CONFIG.logoSrc}
+            navItems={SITE_CONFIG.nav}
+            pathname={Astro.url.pathname}
+            locale={locale}
+            alternates={pageAlternates}
+        />
+
+        <ClickSpark client:idle sparkSize={8} sparkRadius={18} sparkCount={6} duration={350}>
+            <main
+                id="main-content"
+                class="min-h-screen flex flex-col pt-32 pb-12 px-6 sm:px-8 lg:px-12 max-w-7xl mx-auto w-full relative z-10"
+            >
+                <div class="flex-grow flex flex-col w-full">
+                    <slot />
+                </div>
+
+                <footer
+                    class="relative mt-16 sm:mt-24 pt-8 sm:pt-10 border-t border-black/[0.05] dark:border-white/[0.08] flex flex-col-reverse md:flex-row items-center md:justify-between gap-4 sm:gap-6 text-center md:text-left transition-opacity duration-300"
+                >
+                    <div class="text-[11px] sm:text-xs font-sans text-secondary-text dark:text-gray-400 tracking-wide">
+                        &copy; {new Date().getFullYear()} {SITE_CONFIG.footer.copyright[locale]}
+                    </div>
+
+                    <div
+                        class="flex items-center justify-center md:justify-end flex-wrap gap-3.5 sm:gap-6 text-[11px] sm:text-xs font-mono uppercase tracking-widest"
+                    >
+                        {
+                            [
+                                ...(SITE_CONFIG.elsewhere.length > 0
+                                    ? [{ text: t(locale, "nav.elsewhere"), href: localizePath(locale, "/elsewhere/") }]
+                                    : []),
+                                { text: t(locale, "footer.rss"), href: localizePath(locale, "/rss.xml") },
+                            ].map((item, index, all) => (
+                                <>
+                                    <a
+                                        href={item.href}
+                                        class="hover:underline transition-opacity"
+                                        data-astro-reload={item.href.endsWith(".xml") ? "" : undefined}
+                                    >
+                                        <ShinyText
+                                            text={item.text}
+                                            speed={4}
+                                            color="#999999"
+                                            colorDark="#888888"
+                                            shineColor="#000000"
+                                            shineColorDark="#ffffff"
+                                        />
+                                    </a>
+                                    {index < all.length - 1 && (
+                                        <span class="text-black/20 dark:text-white/20 select-none">/</span>
+                                    )}
+                                </>
+                            ))
+                        }
+                    </div>
+                </footer>
+            </main>
+        </ClickSpark>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+---
+import { t } from "@/i18n";
+import type { Locale } from "@/config";
+
+interface Props {
+  headings: { depth: number; slug: string; text: string }[];
+  locale: Locale;
+}
+
+const { headings, locale } = Astro.props;
+
+// Filter to only include H2 headings as requested
+const filteredHeadings = headings.filter((h) => h.depth === 2);
+
+import { RiArrowUpLine } from "@remixicon/react";
+---
+
+<nav class="toc-container" aria-label={t(locale, "toc.label")}>
+  <div class="toc-sticky-wrapper">
+    {filteredHeadings.length > 0 && (
+      <>
+        <div class="toc-header">
+          <span class="toc-line"></span>
+          <span class="toc-title">{t(locale, "toc.title")}</span>
+        </div>
+        <ul class="toc-list mb-6">
+          {filteredHeadings.map((heading) => (
+            <li>
+              <a href={`#${heading.slug}`} class="toc-link">
+                <span class="link-text">{heading.text}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </>
+    )}
+
+    {/* Back to Top button - only visible when scrolled */}
+    <div class={`back-to-top-wrapper pt-6 flex-shrink-0 ${filteredHeadings.length > 0 ? 'border-t border-black/5 dark:border-white/10' : ''}`}>
+      <button 
+        id="back-to-top-btn"
+        type="button"
+        class="group inline-flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-widest hover:text-accent transition-colors text-left w-full cursor-pointer"
+      >
+        <span class="transition-transform duration-300 group-hover:-translate-y-0.5">
+          <RiArrowUpLine className="w-3.5 h-3.5" />
+        </span>
+        <span>{t(locale, "toc.top")}</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<script>
+  function setupTOC() {
+    const observerOptions = {
+      root: null,
+      rootMargin: '-10% 0px -80% 0px',
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          document.querySelectorAll('.toc-link').forEach(link => {
+            const isActive = link.getAttribute('href') === `#${id}`;
+            if (isActive) {
+              link.classList.add('active');
+              // Auto-scroll the TOC list to show the active item
+              const list = link.closest('.toc-list');
+              if (list) {
+                // Use scrollIntoView with block: 'nearest' or 'center' 
+                // nearest avoids jumping if it's already visible
+                link.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+              }
+            } else {
+              link.classList.remove('active');
+            }
+          });
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('h2[id]').forEach((h2) => {
+      observer.observe(h2);
+    });
+  }
+
+  // Run on initial load
+  setupTOC();
+  // Run on view transitions
+  document.addEventListener('astro:after-swap', setupTOC);
+</script>

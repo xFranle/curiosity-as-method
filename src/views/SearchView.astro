@@ -1,0 +1,38 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import SearchResults from "@/components/ui/SearchResults";
+import { SITE_CONFIG, type Locale } from "@/config";
+import { localizePath, t } from "@/i18n";
+import TextReveal from "@/components/ui/TextReveal";
+
+interface Props {
+    locale: Locale;
+}
+
+const { locale } = Astro.props;
+---
+
+<Layout
+    locale={locale}
+    title={`${t(locale, "search.title")} // ${SITE_CONFIG.title[locale]}`}
+    description={t(locale, "search.description", { site: SITE_CONFIG.title[locale] })}
+    alternates={{ en: localizePath("en", "/search/"), es: localizePath("es", "/search/") }}
+    noindex
+>
+    <div class="max-w-6xl mx-auto w-full pt-2 sm:pt-4 md:pt-8 pb-16 sm:pb-20">
+        <div class="hidden md:flex fixed top-0 right-0 h-screen z-[-10] select-none pointer-events-none overflow-hidden items-center justify-center">
+            <TextReveal
+                client:load
+                text={t(locale, "search.watermark")}
+                type="char"
+                className="font-bold text-black/[0.03] dark:text-white/[0.10] text-[8vh] sm:text-[10vh] lg:text-[18vh] leading-none whitespace-nowrap"
+                style={{
+                    writingMode: "vertical-rl",
+                    textOrientation: "mixed",
+                }}
+            />
+        </div>
+
+        <SearchResults client:load locale={locale} />
+    </div>
+</Layout>

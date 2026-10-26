@@ -1,0 +1,169 @@
+---
+import type { Page } from "astro";
+import { SITE_CONFIG, type Locale } from "@/config";
+import { formatDateCompact, localizePath, t } from "@/i18n";
+import type { Post } from "@/utils/content";
+import Layout from "@/layouts/Layout.astro";
+import TextReveal from "@/components/ui/TextReveal";
+import SpotlightCard from "@/components/ui/SpotlightCard";
+import FadeContent from "@/components/ui/FadeContent";
+import ScrollFloat from "@/components/ui/ScrollFloat";
+
+interface Props {
+    locale: Locale;
+    page: Page<Post>;
+}
+
+const { locale, page } = Astro.props;
+
+// Page 1 of the list exists in every language. Later pages are not translations of each other.
+const listPath = (l: Locale) => localizePath(l, page.currentPage === 1 ? "/blog/" : `/blog/${page.currentPage}/`);
+const alternates =
+    page.currentPage === 1 ? { en: localizePath("en", "/blog/"), es: localizePath("es", "/blog/") } : { [locale]: listPath(locale) };
+---
+
+<Layout
+    locale={locale}
+    title={`BLOG // ${SITE_CONFIG.title[locale]}`}
+    description={SITE_CONFIG.description[locale]}
+    alternates={alternates}
+>
+    <div
+        class="max-w-6xl mx-auto w-full pt-2 sm:pt-4 md:pt-8 pb-16 sm:pb-20"
+    >
+        <div
+            class="hidden md:flex fixed top-0 right-0 h-screen z-[-10] select-none pointer-events-none overflow-hidden items-center justify-center"
+        >
+            <TextReveal
+                client:load
+                text="Blog"
+                type="char"
+                className="font-bold text-black/[0.03] dark:text-white/[0.10] text-[8vh] sm:text-[10vh] lg:text-[18vh] leading-none whitespace-nowrap"
+                style={{
+                    writingMode:
+                        "vertical-rl",
+                    textOrientation:
+                        "mixed",
+                }}
+            />
+        </div>
+
+        <div class="flex items-center justify-between mb-6 sm:mb-8 px-1 sm:px-2 font-mono">
+            <div class="text-secondary-text dark:text-zinc-300 text-[11px] sm:text-xs md:text-sm uppercase tracking-widest">
+                {t(locale, "blog.eyebrow")}
+            </div>
+            <div class="text-secondary-text/70 dark:text-zinc-400 text-[11px] sm:text-xs md:text-sm tracking-widest uppercase">
+                {page.total} {page.total === 1 ? t(locale, "blog.entry") : t(locale, "blog.entries")}
+            </div>
+        </div>
+
+        {page.data.length === 0 && (
+            <p class="py-16 font-mono text-sm text-secondary-text dark:text-zinc-300">{t(locale, "blog.empty")}</p>
+        )}
+
+        <div class="flex flex-col gap-4 sm:gap-6 md:gap-8">
+            {
+                page.data.map(
+                    (
+                        post: Post,
+                        index: number,
+                    ) => (
+                        <FadeContent
+                            client:visible
+                            className="w-full"
+                            delay={index * 100}
+                            duration={800}
+                            blur={true}
+                        >
+                            <SpotlightCard
+                                client:visible
+                                className="p-4 sm:p-5 md:p-6 border border-transparent dark:border-white/[0.08] dark:hover:border-white/20 dark:bg-white/[0.015] dark:hover:bg-white/[0.035] transition-all duration-300"
+                            >
+                                <article class="flex flex-col md:flex-row gap-2.5 md:gap-8 group relative z-10 md:items-baseline">
+                                    <div class="w-full md:w-24 flex-shrink-0 flex md:flex-col items-center md:items-start gap-2.5 md:gap-1.5 pt-0.5 md:pt-0 mt-0 md:mt-1.5 font-mono">
+                                        <div class="text-secondary-text/80 dark:text-zinc-400 group-hover:text-black dark:group-hover:text-zinc-200 transition-colors font-mono text-[11px] md:text-xs">
+                                            {formatDateCompact(post.entry.data.pubDate)}
+                                        </div>
+                                        <span class="w-1 h-1 rounded-full bg-gray-300 dark:bg-zinc-600 md:hidden"></span>
+                                        <div class="text-[9.5px] md:text-[10px] font-medium uppercase tracking-widest text-secondary-text/70 dark:text-zinc-400 group-hover:text-black dark:group-hover:text-zinc-300 transition-colors">
+                                            {post.entry.data.category}
+                                        </div>
+                                    </div>
+
+                                    <div class="flex-1 space-y-1.5 md:space-y-3">
+                                        <a
+                                            href={post.path}
+                                            class="block after:absolute after:inset-0 after:z-20 after:cursor-pointer"
+                                        >
+                                            <h2 class="text-[17px] md:text-xl font-medium tracking-wide text-primary-text dark:text-white group-hover:text-black dark:group-hover:text-white transition-colors leading-snug md:leading-normal">
+                                                <ScrollFloat
+                                                    client:visible
+                                                    text={post.entry.data.title}
+                                                    className="text-[17px] md:text-xl font-medium tracking-wide"
+                                                    scrollStart="top bottom-=50"
+                                                    scrollEnd="top center+=100"
+                                                    stagger={0.02}
+                                                />
+                                            </h2>
+                                        </a>
+
+                                        <p class="text-[13px] md:text-sm text-secondary-text dark:text-zinc-300 group-hover:text-primary-text/90 dark:group-hover:text-zinc-200 leading-relaxed font-light line-clamp-2 md:line-clamp-none max-w-3xl transition-colors">
+                                            {post.entry.data.description}
+                                        </p>
+                                    </div>
+                                </article>
+                            </SpotlightCard>
+                        </FadeContent>
+                    ),
+                )
+            }
+        </div>
+
+        <!-- Pagination Navigation -->
+        <div
+            class="flex justify-between items-center mt-16 pt-12 border-t border-black/5 dark:border-white/10 text-secondary-text dark:text-zinc-300 font-mono text-xs tracking-widest uppercase"
+        >
+            {
+                page
+                    .url
+                    .prev ? (
+                    <a
+                        href={
+                            page
+                                .url
+                                .prev
+                        }
+                        class="text-sm font-medium hover:text-black dark:hover:text-white transition-colors"
+                    >
+                        ←
+                        {t(locale, "pagination.previous")}
+                    </a>
+                ) : (
+                    <span />
+                )
+            }
+            <span class="text-xs font-mono">
+                {t(locale, "pagination.pageOf", { current: page.currentPage, total: page.lastPage })}
+            </span>
+            {
+                page
+                    .url
+                    .next ? (
+                    <a
+                        href={
+                            page
+                                .url
+                                .next
+                        }
+                        class="text-sm font-medium hover:text-black dark:hover:text-white transition-colors"
+                    >
+                        {t(locale, "pagination.next")}
+                        →
+                    </a>
+                ) : (
+                    <span />
+                )
+            }
+        </div>
+    </div>
+</Layout>

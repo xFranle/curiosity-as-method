@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+<title id="title">TEORÍA TRIANGULAR DEL AMOR</title>
+<desc id="desc">INTIMIDAD at the top, PASIÓN at the lower left, COMPROMISO at the lower right. At the center, Amor consumado.</desc>
+<rect width="1200" height="900" fill="#FCFAF7"/>
+<text x="600" y="77" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" letter-spacing="3" fill="#303B46">TEORÍA TRIANGULAR DEL AMOR</text>
+<line x1="280" y1="99" x2="920" y2="99" stroke="#D9D4CB" stroke-width="2"/>
+<!-- Vertices and every segment use an exactly symmetric equilateral triangle. -->
+<path d="M600 181 L267.5 757 L932.5 757 Z" fill="#F1F2F0" stroke="#4C5B63" stroke-width="4" stroke-linejoin="round"/>
+<path d="M600 181 L600 565 L267.5 757" stroke="#99AAA8" stroke-width="2" fill="none" stroke-dasharray="7 10"/>
+<path d="M600 565 L932.5 757" stroke="#99AAA8" stroke-width="2" fill="none" stroke-dasharray="7 10"/>
+<!-- the circles center exactly on the vertices -->
+<circle cx="600" cy="181" r="12" fill="#6479A3" stroke="#FCFAF7" stroke-width="4"/>
+<circle cx="267.5" cy="757" r="12" fill="#C17E75" stroke="#FCFAF7" stroke-width="4"/>
+<circle cx="932.5" cy="757" r="12" fill="#579A87" stroke="#FCFAF7" stroke-width="4"/>
+<text x="600" y="146" text-anchor="middle" fill="#435F8E" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" letter-spacing="1.1">INTIMIDAD</text>
+<text x="267.5" y="809" text-anchor="middle" fill="#A15E55" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" letter-spacing="1.1">PASIÓN</text>
+<text x="932.5" y="809" text-anchor="middle" fill="#377E6B" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" letter-spacing="1.1">COMPROMISO</text>
+<rect x="416" y="516" width="368" height="111" rx="22" fill="#25383F"/>
+<text x="600" y="558" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">Amor consumado</text>
+<text x="600" y="594" text-anchor="middle" fill="#E2E9E8" font-family="Arial, Helvetica, sans-serif" font-size="18">Intimidad · Pasión · Compromiso</text>
+<text x="600" y="857" text-anchor="middle" fill="#677177" font-family="Arial, Helvetica, sans-serif" font-size="17">Modelo conceptual basado en Sternberg (1986). No representa una escala de medición.</text>
+</svg>

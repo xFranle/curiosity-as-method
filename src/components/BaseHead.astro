@@ -1,0 +1,161 @@
+---
+import { DEFAULT_LOCALE, LOCALES, OG_LOCALES, SITE_CONFIG, type Locale } from "@/config";
+import { localizePath } from "@/i18n";
+import type { Alternates } from "@/utils/content";
+import { defaultCardPath } from "@/utils/social-card";
+
+interface Props {
+    title: string;
+    description: string;
+    locale: Locale;
+    /** Path of the same page in each language that actually exists. Drives hreflang. */
+    alternates?: Alternates;
+    /** Social card (path or absolute URL). Defaults to the site card of this language. */
+    image?: string;
+    imageAlt?: string;
+    type?: "website" | "article";
+    publishDate?: Date;
+    modifiedDate?: Date;
+    tags?: string[];
+    noindex?: boolean;
+}
+
+const {
+    title,
+    description,
+    locale,
+    alternates = {},
+    image = defaultCardPath(locale),
+    imageAlt = SITE_CONFIG.title[locale],
+    type = "website",
+    publishDate,
+    modifiedDate,
+    tags = [],
+    noindex = false,
+} = Astro.props;
+
+const origin = Astro.site ?? new URL(SITE_CONFIG.site);
+const canonicalURL = new URL(Astro.url.pathname, origin);
+const imageURL = new URL(image, origin);
+
+// hreflang only makes sense when there are at least two versions of the page.
+const alternateEntries = LOCALES.flatMap((l) => (alternates[l] ? [[l, new URL(alternates[l]!, origin)] as const] : []));
+const hasAlternates = alternateEntries.length > 1;
+const xDefault = alternates[DEFAULT_LOCALE] ? new URL(alternates[DEFAULT_LOCALE]!, origin) : undefined;
+const otherOgLocales = alternateEntries.filter(([l]) => l !== locale).map(([l]) => OG_LOCALES[l]);
+
+const siteName = SITE_CONFIG.title[locale];
+---
+
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<meta name="generator" content={Astro.generator} />
+<meta name="theme-color" content="#ffffff" id="theme-color-meta" />
+
+<!-- Machine-readable RSS feeds (one per language) -->
+{
+    LOCALES.map((l) => (
+        <link
+            rel="alternate"
+            type="application/rss+xml"
+            href={new URL(localizePath(l, "/rss.xml"), origin).toString()}
+            title={`${SITE_CONFIG.title[l]} (${l.toUpperCase()})`}
+        />
+    ))
+}
+
+<!-- Machine-readable LLM context -->
+<link rel="alternate" type="text/markdown" href={new URL("/llms.txt", origin).toString()} title="LLM Context" />
+
+<!-- Canonical URL and language alternates -->
+<link rel="canonical" href={canonicalURL} />
+{
+    hasAlternates &&
+        alternateEntries.map(([l, url]) => <link rel="alternate" hreflang={l} href={url.toString()} />)
+}
+{hasAlternates && xDefault && <link rel="alternate" hreflang="x-default" href={xDefault.toString()} />}
+
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+<meta name="author" content={SITE_CONFIG.author} />
+<meta name="robots" content={noindex ? "noindex, follow" : "index, follow"} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content={type} />
+<meta property="og:site_name" content={siteName} />
+<meta property="og:url" content={canonicalURL} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:locale" content={OG_LOCALES[locale]} />
+{hasAlternates && otherOgLocales.map((l) => <meta property="og:locale:alternate" content={l} />)}
+<meta property="og:image" content={imageURL} />
+<meta property="og:image:alt" content={imageAlt} />
+{image.startsWith("/og/") && (
+    <>
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+    </>
+)}
+{
+    type === "article" && (
+        <>
+            {publishDate && <meta property="article:published_time" content={publishDate.toISOString()} />}
+            {(modifiedDate || publishDate) && (
+                <meta property="article:modified_time" content={(modifiedDate || publishDate)!.toISOString()} />
+            )}
+            <meta property="article:author" content={SITE_CONFIG.author} />
+            {tags.map((tag) => <meta property="article:tag" content={tag} />)}
+        </>
+    )
+}
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content={canonicalURL} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageURL} />
+<meta name="twitter:image:alt" content={imageAlt} />
+
+<script is:inline>
+    const getTheme = () => {
+        if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+            return localStorage.getItem("theme");
+        }
+        return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    };
+
+    const applyTheme = (theme, doc = document) => {
+        const isDark = theme === "dark";
+        doc.documentElement.classList.toggle("dark", isDark);
+
+        // Update theme-color meta tag
+        const themeColor = isDark ? "#0a0a0a" : "#ffffff";
+        let metaThemeColor = doc.querySelector('meta[name="theme-color"]');
+        if (!metaThemeColor) {
+            metaThemeColor = doc.createElement("meta");
+            metaThemeColor.name = "theme-color";
+            doc.head.appendChild(metaThemeColor);
+        }
+        metaThemeColor.content = themeColor;
+
+        // Save preference
+        if (typeof localStorage !== "undefined") {
+            localStorage.setItem("theme", theme);
+        }
+    };
+
+    // Initialize theme
+    const theme = getTheme();
+    applyTheme(theme);
+
+    // Astro View Transitions Support
+    document.addEventListener("astro:before-swap", (event) => {
+        applyTheme(getTheme(), event.newDocument);
+    });
+</script>
