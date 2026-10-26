@@ -6,3 +6,13 @@ overrides:
   "katex@<0.18.2": "^0.19.0"
   "fflate@<0.7.5": "0.7.5"
   "postcss-selector-parser@<6.1.5": "6.1.5"
+
+# Supply-chain policy (explicit, so it does not depend on pnpm's defaults changing).
+# Never install a version published less than 24 hours ago: malicious releases are
+# usually detected and pulled from the registry within hours.
+minimumReleaseAge: 1440
+# Transitive dependencies may not come from git repos or raw tarball URLs.
+blockExoticSubdeps: true
+# Refuse a version whose publisher trust level dropped (for example, a package that
+# used trusted publishing and suddenly does not).
+trustPolicy: no-downgrade
