@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect, Fragment } from "react";
 import { navigate } from "astro:transitions/client";
 import ThemeToggle from "@/components/ui/ThemeToggle";
+import Flag from "@/components/ui/Flag";
 import { RiSearchLine, RiCloseLine } from "@remixicon/react";
 import { DEFAULT_LOCALE, LOCALES, LOCALE_NAMES, type Locale } from "@/config";
 import { getLocaleFromPath, isLocale, localizePath, removeLocale, t } from "@/i18n";
@@ -187,22 +188,22 @@ export default function Navigation({
                             aria-label={tr("nav.language")}
                             className="flex items-center gap-1.5 font-mono text-[11px] sm:text-xs uppercase tracking-widest text-primary-text dark:text-white"
                         >
-                            {LOCALES.map((code, index) => {
+                            {LOCALES.map((code) => {
                                 const isCurrent = code === locale;
                                 const translated = alternates[code];
                                 const href = translated ?? localizePath(code, "/blog/");
                                 const unavailable = tr("nav.langUnavailable", { language: tr(`lang.${code}` as UiKey) });
                                 return (
                                     <Fragment key={code}>
-                                        {index > 0 && <span className="opacity-30 select-none">/</span>}
                                         {isCurrent ? (
                                             <span
                                                 lang={code}
                                                 aria-current="true"
                                                 title={LOCALE_NAMES[code]}
-                                                className="opacity-100 font-medium px-0.5 py-1"
+                                                aria-label={LOCALE_NAMES[code]}
+                                                className="block opacity-100 px-0.5 py-1"
                                             >
-                                                {code}
+                                                <Flag locale={code} />
                                             </span>
                                         ) : (
                                             <a
@@ -212,9 +213,9 @@ export default function Navigation({
                                                 onClick={() => rememberLocale(code)}
                                                 aria-label={translated ? LOCALE_NAMES[code] : `${LOCALE_NAMES[code]}. ${unavailable}`}
                                                 title={translated ? LOCALE_NAMES[code] : unavailable}
-                                                className="opacity-50 hover:opacity-100 dark:opacity-70 dark:hover:opacity-100 transition-opacity px-0.5 py-1"
+                                                className="block opacity-45 hover:opacity-100 dark:opacity-60 dark:hover:opacity-100 transition-opacity px-0.5 py-1"
                                             >
-                                                {code}
+                                                <Flag locale={code} />
                                             </a>
                                         )}
                                     </Fragment>
