@@ -1,6 +1,6 @@
 import type { APIRoute, GetStaticPaths } from "astro";
 import { LOCALES, SITE_CONFIG } from "@/config";
-import { getAllPosts } from "@/utils/content";
+import { getAllPosts, getTranslations } from "@/utils/content";
 import { loadCardImage } from "@/utils/card-image";
 import { CARD_KINDS, renderCard, type CardContent, type CardKind } from "@/utils/social-card";
 
@@ -21,7 +21,9 @@ export const getStaticPaths = (async () => {
     const articleCards = (
         await Promise.all(
             posts.map(async (post) => {
+                const translations = await getTranslations(post.key);
                 const content: CardContent = {
+                    languages: LOCALES.filter((locale) => translations[locale]),
                     locale: post.locale,
                     title: post.entry.data.title,
                     excerpt: post.entry.data.shareExcerpt ?? post.entry.data.description,
@@ -42,6 +44,7 @@ export const getStaticPaths = (async () => {
             kind: "og" as CardKind,
             content: {
                 locale,
+                languages: LOCALES,
                 title: SITE_CONFIG.title[locale],
                 excerpt: SITE_CONFIG.description[locale],
             } satisfies CardContent,

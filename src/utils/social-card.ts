@@ -16,6 +16,7 @@ import sharp from "sharp";
 import { SITE_CONFIG, type Locale } from "@/config";
 import { formatDate } from "@/i18n";
 import type { CardImage } from "@/utils/card-image";
+import { flagDataUri } from "@/utils/flag-svg";
 
 export type CardKind = "og" | "story" | "story-dark";
 export const CARD_KINDS: CardKind[] = ["og", "story", "story-dark"];
@@ -78,6 +79,8 @@ export interface CardContent {
     date?: Date;
     /** Picture of the article. Shown whole (never cropped), scaled down to fit. */
     image?: CardImage;
+    /** Languages this page exists in. The flags are drawn only when there are two or more. */
+    languages?: readonly Locale[];
 }
 
 // ---------------------------------------------------------------------------
@@ -166,6 +169,42 @@ const mark = (size: number, color: string): Node =>
         ...[0, 1, 2].map(() => h({ width: size, height: size, borderRadius: size, background: color })),
     );
 
+/**
+ * One small flag per available language (USA = English, Argentina = Spanish), 3:2 like the
+ * navigation ones, in the same hairline frame as the article picture. Nothing when the page
+ * exists in a single language, so the flags never promise a translation that is not there.
+ */
+function flagsNode(c: CardContent, flagWidth: number, gap: number, radius: number, border: string): Node | undefined {
+    if (!SITE_CONFIG.socialCard.showFlags || !c.languages || c.languages.length < 2) return undefined;
+    const height = Math.round((flagWidth * 2) / 3);
+    // Frames are border-box: the 2px border is taken out of the inside, so the frame is 4px bigger
+    // than the flag. Otherwise the flag overflows its frame and loses its bottom and right edge.
+    const frame = 4;
+    return h(
+        { alignItems: "center", gap, flexShrink: 0 },
+        ...c.languages.map((locale) =>
+            h(
+                {
+                    width: flagWidth + frame,
+                    height: height + frame,
+                    borderRadius: radius,
+                    border: `2px solid ${border}`,
+                    overflow: "hidden",
+                },
+                {
+                    type: "img",
+                    props: {
+                        src: flagDataUri(locale),
+                        width: flagWidth,
+                        height,
+                        style: { width: flagWidth, height, objectFit: "fill" },
+                    },
+                },
+            ),
+        ),
+    );
+}
+
 /** Title size by length: long titles shrink instead of being cut. */
 function titleSize(length: number, scale: { xl: number; l: number; m: number; s: number; xs: number }): number {
     if (length <= 28) return scale.xl;
@@ -238,20 +277,24 @@ function ogLayout(kind: CardKind, c: CardContent, title: string, excerpt: string
             color: colors.text,
             fontFamily: "Geist",
         },
-        // Brand row
+        // Brand row: the mark on the left, the language flags mirrored on the right
         h(
-            { alignItems: "center", gap: 20 },
-            mark(10, colors.text),
-            text(
-                {
-                    fontFamily: "Geist Mono",
-                    fontSize: 24,
-                    letterSpacing: 4,
-                    textTransform: "uppercase",
-                    color: colors.muted,
-                },
-                siteName,
+            { alignItems: "center", justifyContent: "space-between" },
+            h(
+                { alignItems: "center", gap: 20 },
+                mark(10, colors.text),
+                text(
+                    {
+                        fontFamily: "Geist Mono",
+                        fontSize: 24,
+                        letterSpacing: 4,
+                        textTransform: "uppercase",
+                        color: colors.muted,
+                    },
+                    siteName,
+                ),
             ),
+            flagsNode(c, 36, 12, 5, colors.border),
         ),
         // Title + excerpt (+ picture on the right, when the article has one)
         h(
@@ -355,26 +398,30 @@ function storyLayout(kind: CardKind, c: CardContent, title: string, excerpt: str
             },
             // Picture of the article, whole and never cropped
             image ? imageNode(image, 760, imageMaxHeight, 28, colors.border, true) : undefined,
-            // Author row
+            // Author row: avatar and name on the left, the language flags on the right
             h(
-                { alignItems: "center", gap: 24 },
+                { alignItems: "center", justifyContent: "space-between" },
                 h(
-                    {
-                        width: 88,
-                        height: 88,
-                        borderRadius: 88,
-                        alignItems: "center",
-                        justifyContent: "center",
-                        border: `2px solid ${colors.border}`,
-                        background: colors.background,
-                    },
-                    mark(9, colors.text),
+                    { alignItems: "center", gap: 24 },
+                    h(
+                        {
+                            width: 88,
+                            height: 88,
+                            borderRadius: 88,
+                            alignItems: "center",
+                            justifyContent: "center",
+                            border: `2px solid ${colors.border}`,
+                            background: colors.background,
+                        },
+                        mark(9, colors.text),
+                    ),
+                    h(
+                        { flexDirection: "column", gap: 4 },
+                        text({ fontSize: 36, fontWeight: 600, letterSpacing: -0.5 }, SITE_CONFIG.author),
+                        text({ fontFamily: "Geist Mono", fontSize: 25, color: colors.muted }, siteName),
+                    ),
                 ),
-                h(
-                    { flexDirection: "column", gap: 4 },
-                    text({ fontSize: 36, fontWeight: 600, letterSpacing: -0.5 }, SITE_CONFIG.author),
-                    text({ fontFamily: "Geist Mono", fontSize: 25, color: colors.muted }, siteName),
-                ),
+                flagsNode(c, 48, 14, 6, colors.border),
             ),
             // Title: the protagonist
             text(

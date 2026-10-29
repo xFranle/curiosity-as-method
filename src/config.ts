@@ -116,6 +116,8 @@ export const SITE_CONFIG = {
     socialCard: {
         /** Show the publication date on the cards. */
         showDate: true,
+        /** Small USA / Argentina flags when the article exists in both English and Spanish. */
+        showFlags: true,
         /** Light and dark variants of the Story/OG card. Both are always generated. */
         light: {
             background: "#FAFAFA",
