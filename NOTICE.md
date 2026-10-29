@@ -38,6 +38,12 @@ are reserved unless stated otherwise:
   <https://sammlung.staedelmuseum.de/en/work/the-geographer>.
 - **Knowledge paths diagram (EN/ES):** original conceptual illustration created for the essay
   "When Understanding Isn't Enough". It is an explanatory synthesis, not a validated model.
+- **Conditions-for-learning and failure-recovery diagrams (EN/ES):** original conceptual
+  illustrations created for the essay "Neither Good Nor Bad Luck". They are conceptual
+  figures, not validated models.
+- **Paths of possibility (cover, `paths-of-possibility-cover.png`):** abstract illustration
+  without text, generated for the essay "Neither Good Nor Bad Luck". It does not reproduce
+  any photograph or third-party image.
 
 ## Fonts and libraries
 
