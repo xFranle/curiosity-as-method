@@ -1,7 +1,7 @@
 ---
 title: The Love We Build
 description: On what we feel, what we understand, and what two people create together.
-pubDate: 2026-10-20
+pubDate: 2026-09-15
 translationKey: the-love-we-build
 category: philosophy
 shareExcerpt: Loving someone and building love with someone are not quite the same. What turns a feeling into a relationship we create together?

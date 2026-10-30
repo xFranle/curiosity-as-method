@@ -1,7 +1,7 @@
 ---
 title: When Understanding Isn't Enough
 description: Understanding an idea doesn't necessarily mean we've learned to think with it.
-pubDate: 2026-10-26
+pubDate: 2026-10-10
 translationKey: when-understanding-isnt-enough
 category: psychology
 shareExcerpt: We can understand an idea the moment we encounter it and still fail to recognize it when the world presents it to us again.

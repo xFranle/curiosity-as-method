@@ -1,7 +1,7 @@
 ---
 title: El amor que se construye
 description: Sobre lo que sentimos, lo que comprendemos y aquello que construimos entre dos personas.
-pubDate: 2026-10-20
+pubDate: 2026-09-15
 translationKey: the-love-we-build
 category: filosofía
 shareExcerpt: Amar a alguien y construir amor con alguien no son exactamente lo mismo. ¿Qué convierte lo que sentimos en un vínculo compartido?
