@@ -15,7 +15,7 @@ Hay una diferencia entre **no conocer el desenlace** y **no tener ninguna influe
 
 Nada de esto demuestra que el azar no exista. Tampoco que toda persona pueda construir las mismas oportunidades: los recursos, las circunstancias y las decisiones ajenas importan. La pregunta que me interesa es más concreta: **antes de saber qué va a ocurrir, ¿qué podemos modificar para que algunas posibilidades sean más accesibles y ciertas pérdidas menos devastadoras?**
 
-![Un mapa abstracto de caminos que se bifurcan, se conectan y conducen a desenlaces diferentes.](/images/paths-of-possibility-cover.png)
+![Una persona de pie en una bifurcación de un camino de piedra que serpentea por un valle con niebla, con puentes, túneles y otros caminos que se extienden hacia un mar lejano bajo una luz cálida.](/images/valley-of-paths-cover.jpg)
 
 ## Una explicación del pasado no es un mapa del futuro
 

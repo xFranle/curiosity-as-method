@@ -41,20 +41,8 @@ are reserved unless stated otherwise:
 - **Conditions-for-learning and failure-recovery diagrams (EN/ES):** original conceptual
   illustrations created for the essay "Neither Good Nor Bad Luck". They are conceptual
   figures, not validated models.
-- **Paths of possibility (cover, `paths-of-possibility-cover.png`):** abstract illustration
-  without text, generated for the essay "Neither Good Nor Bad Luck". It does not reproduce
-  any photograph or third-party image.
-- **Moonrise:** photograph by A. Ghizzi Panizza/ESO, licensed CC BY 4.0
-  ([Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Moonrise_(_DSC3183b-CC).jpg)).
-  Resized for the web; credit shown next to the image in the essay "The Moon and the Paths We
-  Have Yet to Walk".
-- **Amber Moon:** photograph by Euphoria Photography, licensed CC BY 4.0
-  ([Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Amber_Moon.jpg)). Resized for
-  the web; credit shown next to the image in the same essay.
-- **Orange Moon:** photograph by Mathieu Landretti, licensed CC BY-SA 4.0
-  ([Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Orange_Moon.jpg)). Included
-  unmodified; credit shown next to the image in the same essay. Any adaptation of this photograph
-  must be shared under the same license.
+- **Valley of paths (cover, `valley-of-paths-cover.jpg`):** illustration supplied by the author for the
+  essay "Neither Good Nor Bad Luck". It does not reproduce any photograph or third-party image.
 
 ## Fonts and libraries
 

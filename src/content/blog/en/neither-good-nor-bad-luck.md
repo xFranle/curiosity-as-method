@@ -15,7 +15,7 @@ There is a difference between **not knowing how something will turn out** and **
 
 None of this proves that chance is unreal. Nor does it mean everyone can build the same opportunities: resources, circumstances, and other people's decisions matter. My question is more specific: **before we know what will happen, what can we change to make certain possibilities more accessible and certain losses less destructive?**
 
-![An abstract map of branching paths that intersect and lead toward different possible outcomes.](/images/paths-of-possibility-cover.png)
+![A traveler stands at a fork in a stone path that winds across a misty valley, with bridges, tunnels and other paths leading toward a distant sea in warm light.](/images/valley-of-paths-cover.jpg)
 
 ## An explanation of the past is not a map of the future
 
