@@ -1,169 +1,171 @@
 ---
-title: "Neither Good Nor Bad Luck"
-description: "What we can change before we know the outcome: causality, learning, opportunity, and the invisible value of prevention."
+title: "Beyond Good and Bad Luck"
+description: "What our choices can change, even when we cannot predict the outcome."
 pubDate: 2026-10-30
 translationKey: "neither-good-nor-bad-luck"
 category: "philosophy"
-shareExcerpt: "We don't choose every event. But we can change the conditions it encounters and the possibilities we learn to recognize."
+shareExcerpt: "We cannot predict every outcome, but we can shape some of the conditions that make opportunities possible and losses less destructive."
 ---
 
-When someone comes across an unexpected opportunity, we say they were lucky. When they suffer a major loss after an unlikely incident, we call it bad luck. Both expressions can be perfectly sincere: they capture our surprise at an outcome that no one could guarantee.
+When an unexpected opportunity comes our way, we call it good luck. When an unlikely event leads to a serious loss, we call it bad luck. These expressions are not necessarily wrong. They capture something real about our experience: outcomes can surprise us, and even our best efforts cannot guarantee what happens next.
 
-But they can also end an inquiry too soon. We say *luck* and stop asking what happened beforehand: where the person spent their time, what they had learned, which relationships they had developed, what alternatives were available to them. Or, when something goes wrong, what made a small problem grow into a serious loss.
+The trouble begins when the word *luck* brings our curiosity to a stop. We notice the outcome but overlook what came before it: the places someone chose to spend time, the skills they developed, the relationships they formed, or the options they had available. When things go badly, we may be just as quick to overlook the conditions that allowed a manageable problem to become a major loss.
 
-There is a difference between **not knowing how something will turn out** and **having no influence over the conditions in which it unfolds**. A conversation can occur unexpectedly while still depending on having chosen somewhere that made it possible. A technical failure may be unpredictable and yet encounter a system that is prepared for it. In another system, the same disruption might spread unchecked.
+**Not knowing how something will turn out is not the same as having no influence over how it unfolds.** A conversation may be unexpected, yet still depend on our decision to be somewhere it could happen. A system failure may be impossible to predict precisely, yet encounter safeguards that keep it from spreading. Under different conditions, the very same disruption could do far more damage.
 
-None of this proves that chance is unreal. Nor does it mean everyone can build the same opportunities: resources, circumstances, and other people's decisions matter. My question is more specific: **before we know what will happen, what can we change to make certain possibilities more accessible and certain losses less destructive?**
+None of this means chance is an illusion. It does not mean everyone has access to the same opportunities, either. Resources, circumstances, and other people's choices shape what is possible. The question I want to explore is narrower, and perhaps more useful: **before we know what will happen, what can we change to make certain opportunities more accessible and certain losses less destructive?**
 
 ![A traveler stands at a fork in a stone path that winds across a misty valley, with bridges, tunnels and other paths leading toward a distant sea in warm light.](/images/valley-of-paths-cover.jpg)
 
-## An explanation of the past is not a map of the future
+## Explaining the Past Is Not the Same as Predicting the Future
 
-Suppose someone develops a skill out of curiosity, joins a community, and years later meets a person who transforms their trajectory. From the ending, it is tempting to arrange every earlier event as a step toward that meeting. The first decision suddenly looks especially farsighted.
+Imagine someone who develops a skill out of curiosity, becomes part of a community, and years later meets a person who changes the direction of their life. Knowing how the story ends, we may start treating every earlier decision as a step toward that meeting. What began as an interest now looks like a remarkably well-conceived plan.
 
-But at the time, they had no idea whom they would meet. Of all the possible endings, we remember the one that happened. The others disappear from the story.
+Yet nothing about that earlier moment guaranteed the encounter. The person did not know whom they would meet, which conversations would matter, or what opportunities might emerge. Once we know the ending, the alternatives that never happened become easy to forget.
 
-In his research on [hindsight bias](https://doi.org/10.1037/0096-1523.1.3.288), Baruch Fischhoff showed that knowing an outcome can change how foreseeable we believe it had been. Reconstructing the causes of an event does not automatically recover the uncertainty that preceded it.
+Psychologist Baruch Fischhoff studied this tendency in his work on [hindsight bias](https://doi.org/10.1037/0096-1523.1.3.288). Knowledge of an outcome can make that outcome seem more foreseeable than it was. Reconstructing a chain of events after the fact does not restore the uncertainty that existed before those events occurred.
 
-This matters to the argument here. A choice may have made a meeting more likely without making it inevitable. Similarly, identifying a vulnerability after a loss does not mean everyone should have noticed it in advance.
+This matters because a decision can make something *more likely* without making it inevitable. And when we identify a vulnerability after a failure, we should not automatically assume that everyone involved could reasonably have recognized it beforehand.
 
-There are at least three questions worth keeping separate. What conditions helped an event occur? What could the people making earlier decisions reasonably have known? What would have changed had they acted differently? The first reconstructs a history; the second considers the information available at the time; the third tries to identify a causal effect.
+Three questions need to be kept apart. What conditions contributed to an event? What could someone reasonably have known before it happened? And what might have been different if they had made another choice? The first asks us to reconstruct a history. The second asks us to judge decisions using the information available at the time. The third asks about causation.
 
-These questions are not interchangeable. Philosophy and causal research distinguish between observing patterns and estimating what happens when we **intervene** on a variable. Seeing certain kinds of people in a community does not, by itself, tell us exactly how much joining it would increase our chances of meeting them. Other conditions may help explain the pattern. The [Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/causal-models/) explores the distinction between observation, intervention, and counterfactual claims.
+That last question is harder than it sounds. Observing that certain people tend to meet in a particular community does not tell us exactly how much *joining* that community would change anyone's chances of meeting them. Other factors could influence both who joins and whom they meet. Work on [causal models](https://plato.stanford.edu/entries/causal-models/) draws an important distinction between observing a pattern and asking what would happen if we intervened to change one of its conditions.
 
-Luck can be an honest word for the unexpected. It becomes a poor explanation when it replaces all those questions with a single label.
+Luck may be an appropriate word for what we did not expect. It becomes an incomplete explanation when we use it instead of asking these questions.
 
-## Changing our surroundings before knowing the opportunity
+## Making Room for Opportunities We Cannot Predict
 
-Sometimes we know exactly what we are looking for. At other times, our choices lead us toward possibilities we cannot yet describe.
+Sometimes we know what we want and can identify a clear path toward it. At other times, the choices we make expose us to possibilities we cannot yet describe.
 
-Learning a skill, joining a community, or talking with people from different backgrounds is not a way of purchasing a future outcome. It changes something less visible: **the range of encounters, information, and questions we are likely to come across**.
+Learning a skill, joining a community, or getting to know people outside our usual circles does not purchase a particular outcome. It changes something less visible: **the kinds of people, ideas, and questions we are likely to encounter**.
 
-The theory of [*planned happenstance*](https://doi.org/10.1002/j.1556-6676.1999.tb02431.x), developed by Kathleen Mitchell, Al Levin, and John Krumboltz in career counseling, begins with a similar insight: exploratory activities can make unforeseen opportunities more likely to arise, even when we cannot know which one will matter. The approach does not try to abolish chance. It rejects the assumption that waiting is our only possible response to it.
+The theory of [*planned happenstance*](https://doi.org/10.1002/j.1556-6676.1999.tb02431.x), developed by Kathleen Mitchell, Al Levin, and John Krumboltz in career counseling, starts from a similar insight. Exploration can create conditions in which unexpected opportunities arise, even when we cannot predict which ones will matter. The point is not to eliminate chance, but to recognize that waiting passively is not our only response to uncertainty.
 
-But exposure is not the same as an outcome. We might spend years in an intellectually rich environment without finding what we expected. We might also find something valuable that we did not know we wanted. That is why it helps to distinguish **expanding the opportunities available to us**, **recognizing one when it appears**, and **turning it into a result**.
+Still, being exposed to an opportunity does not mean recognizing it, and recognizing it does not mean turning it into a result. We might spend years in an intellectually stimulating environment without finding what we hoped for. We might also encounter something valuable that we had never thought to seek.
 
-Social networks help show why this distinction matters. In a [large-scale experiment published in *Science*](https://doi.org/10.1126/science.abl4476), Rajkumar and colleagues examined how changes to LinkedIn connection recommendations affected job mobility. The strength of social ties shaped the flow of opportunities, though effects varied according to the measure of tie strength and the industry. This study cannot tell us how to choose friends or predict an individual relationship. It does show that network structure can alter the information that reaches us.
+Research on social networks helps explain why these differences matter. In a [large-scale experiment published in *Science*](https://doi.org/10.1126/science.abl4476), Rajkumar and colleagues studied how changes to LinkedIn's connection recommendations affected job mobility. The strength of social ties influenced how job opportunities traveled through the network, although the effects varied by industry and by how tie strength was measured. The study cannot tell us whom to befriend, much less predict what any particular relationship will become. It does show that network structure can affect which opportunities reach us.
 
-A relationship's worth is not exhausted by its usefulness. A friendship can matter for trust and affection even if it never leads to a professional opportunity. The point is different: **valuing the relationships we already have and exploring new social environments are compatible choices**.
+Of course, a relationship is not valuable only because of what it might lead to. Friendship can matter for affection, trust, humor, or shared history without producing a single professional benefit. Maintaining those relationships and exploring unfamiliar social settings are not competing commitments.
 
-This also has a philosophical implication: building a future does not always mean pursuing a predefined destination. Sometimes it means increasing the range of futures that might become available.
+The broader point is that **shaping our future does not always mean pursuing a destination we already know**. Sometimes it means making room for possibilities we cannot yet imagine.
 
-## Knowledge changes the map, not just what is written on it
+## How Knowledge Changes What We Can See
 
-Imagine two people listening to the same conversation. One notices a connection between seemingly distant ideas; the other hears interesting facts but sees no possible application. That does not necessarily mean one is more intelligent. They may arrive with different experiences, knowledge, and questions.
+Imagine two people hearing the same conversation. One notices a connection between ideas that initially seem unrelated. The other finds the discussion interesting but sees no obvious application. The difference need not be intelligence. Each person may bring different experiences, knowledge, and questions to the exchange.
 
-Scott Shane studied people discovering opportunities around the same invention and found that their [prior knowledge](https://doi.org/10.1287/orsc.11.4.448.14602) was connected to the applications they were able to identify. The finding comes from entrepreneurship research; it does not turn every everyday conversation into evidence of the same phenomenon. Still, it illustrates an important point: the world offers information, but our interpretive frameworks shape what that information means to us.
+In research on entrepreneurial opportunities, Scott Shane found that people's [prior knowledge](https://doi.org/10.1287/orsc.11.4.448.14602) helped shape which applications they recognized around the same invention. Those findings do not mean that every conversation or life decision follows the same process. They do suggest something worth considering: what we already know can influence which possibilities we notice.
 
-Learning is not simply adding facts. A new idea can reorganize what we already know. After encountering a concept from behavioral science, someone might revisit a professional situation they have known for years and begin asking questions that had never occurred to them. The situation may not have changed. The lens through which they see it has.
+Learning, then, is not just a matter of collecting facts. A new concept can change how earlier knowledge fits together. Someone who studies human behavior might return to a familiar situation at work and begin asking questions that never occurred to them before. The situation has not necessarily changed. **Their way of understanding it has.**
 
-The National Academies' [*How People Learn II*](https://doi.org/10.17226/24783) examines how knowledge is integrated, organized, and transferred. Metacognition adds the possibility of examining our own interpretations: what we assumed, what evidence we overlooked, and what would make us change our minds.
+The National Academies' [*How People Learn II*](https://doi.org/10.17226/24783) examines how knowledge is organized, integrated, and applied across situations. Metacognition adds another layer: the ability to examine our own thinking, recognize assumptions, consider what evidence we may have missed, and ask what would make us revise a conclusion.
 
-But it would be a mistake to turn this into a promise that thinking harder always reveals opportunities. Learned intuition works best when an environment contains patterns that can actually be learned and offers feedback that helps correct errors. Daniel Kahneman and Gary Klein highlighted these conditions in their [study of intuitive expertise](https://doi.org/10.1037/a0016755). Without an environment that supports learning, a compelling impression may remain a poor guide.
+But reflection is not a guarantee of insight. Thinking longer about a mistaken assumption can sometimes make us more attached to it. Daniel Kahneman and Gary Klein, writing about the [conditions for intuitive expertise](https://doi.org/10.1037/a0016755), emphasized the importance of environments with learnable patterns and sufficiently informative feedback. Without those conditions, a strong feeling that we have recognized a pattern may be little more than confidence.
 
-The useful question is not how long we think, but **what changes in the way we think after we observe, test, and learn**.
+The distinction is subtle but important. The goal is not simply to think more. It is to **let experience and evidence change how we think**, so that our next judgment is informed by what the last one taught us.
 
-![A conceptual diagram of exploration, recognition, intervention, and revision as a possible source of further learning.](/images/conditions-learning-en.svg)
+![A conceptual diagram showing exploration, recognition, action, and revision as a recurring learning process.](/images/conditions-learning-en.svg)
 
-*This is a conceptual framework for the essay, not a universal psychological sequence or a model experimentally validated as a whole.*
+*This diagram illustrates a conceptual framework used in the essay. It is not presented as a universal sequence or as a single experimentally validated psychological model.*
 
-## Persistence can preserve a mistake
+## Persistence Can Keep Us on the Wrong Path
 
-There is something reassuring about repeating an activity: we can count the hours, track the days, see that we showed up. Effort is visible. Progress may be slow, difficult to measure, or altogether absent.
+There is something reassuring about consistency. We can count how many days we showed up, how many hours we studied, or how often we practiced. Effort is visible and easy to track. Progress can be slower, harder to measure, or absent altogether.
 
-That makes it easy to confuse two different claims: “I kept doing what I committed to” and “what I am doing is creating the change I want.” The first concerns our behavior. The second is a causal claim about its effectiveness.
+That creates a temptation to treat two statements as though they mean the same thing: “I kept doing what I said I would do” and “What I am doing is moving me closer to my goal.” The first is a description of our behavior. The second is a claim about whether that behavior works.
 
-Consider someone who trains regularly to improve their physical condition. Attendance demonstrates consistency, but it does not tell us whether the training stimulus, recovery, or nutrition fits their goal. A routine can be repeated faithfully while its assumptions go unquestioned. Something similar happens when someone always studies in the same way without testing what they can recall or apply.
+Consider someone who exercises regularly to improve their physical condition. Showing up consistently matters, but attendance alone tells us little about whether their training, recovery, and nutrition are appropriate for the result they want. A routine can be followed faithfully while the assumptions behind it remain unexamined. The same can happen when someone spends hours studying without checking whether they can actually recall or use what they have learned.
 
-Research on [goal setting by Locke and Latham](https://doi.org/10.1037/0003-066X.57.9.705) helps illuminate the relationship between goals, effort, strategy, and feedback. The point is not that perseverance has no value. It is that **perseverance needs information to distinguish continuity from improvement**.
+Research on [goal setting by Edwin Locke and Gary Latham](https://doi.org/10.1037/0003-066X.57.9.705) helps explain the interplay among goals, effort, strategy, and feedback. Perseverance has value. But without information about the effects of our actions, it can preserve an ineffective method just as easily as an effective one.
 
-That raises an uncomfortable question: what are we being faithful to when we insist on continuing? The outcome we care about, or the procedure with which we began? Leaving behind an ineffective method can be the most consistent way to remain committed to a purpose.
+This leads to a more uncomfortable question: **when we refuse to change course, what exactly are we staying committed to?** The outcome we care about, or the procedure we happened to choose first? Sometimes abandoning a method is the most consistent way to remain committed to a goal.
 
-And there is an earlier question: what counts as progress? For one person it might mean building a project; for another, having more free time, forming a relationship, or learning a discipline. There is no universal definition of success that automatically ranks every choice. Before we talk about “improving our odds,” we need to ask **the odds of what, for whom, and at what cost**.
+There is also a question that comes before all efforts to improve our odds: what would count as improvement? For one person, it may mean building a business; for another, having more free time, learning an art, or developing a meaningful relationship. Success is not a single standard that can rank every human goal. Before asking how to improve our chances, we have to ask **our chances of what, and at what cost**.
 
-## A failure is not yet a catastrophe
+## A Failure Is Not Yet a Catastrophe
 
-Imagine an essential service going offline. The immediate explanation may be a broken component, a mistaken operation, or an external disruption. But the fact that the service stopped does not, by itself, explain why an organization lost data, could not operate for days, or struggled to recover.
+Imagine a service that an organization depends on suddenly going offline. Perhaps a component fails, an operator makes a mistake, or an external event disrupts the system. That may explain why the service stopped. It does not yet explain why the organization lost data, remained unable to operate for days, or struggled to recover.
 
-It helps to distinguish the event that starts a problem, the conditions that allow it to spread, and the system's ability to respond. Some failures are hard to prevent, while their consequences may still depend heavily on decisions made much earlier.
+To understand the damage, we need to separate the triggering event from the conditions that allowed it to spread, and then examine the system's ability to respond. We may have limited control over the first while retaining considerable influence over the others.
 
-Take a server. Having a backup looks like a straightforward solution. But a backup might be incomplete, depend on credentials that are unavailable during an incident, or take longer to restore than the operation can tolerate. The question is not merely whether a backup *exists*. It is what must be restored, how much disruption is tolerable, and whether recovery actually works under the conditions in which it may be needed.
+A server backup seems like an obvious precaution. Yet the mere existence of a backup tells us very little. It may be incomplete, inaccessible without credentials that were lost during the incident, or so slow to restore that the business cannot tolerate the downtime. What matters is not just whether a copy exists, but what needs to be restored, how quickly operations must resume, and whether the recovery process has actually been tested under realistic conditions.
 
-That is why contingency planning is more than a declaration of good intentions. [NIST SP 800-34](https://doi.org/10.6028/NIST.SP.800-34r1) addresses impact analysis, recovery priorities, and testing. These technical considerations point to a more general question: **how much of an adverse outcome belongs to the initiating event, and how much was amplified by the system we had built?**
+This is why contingency planning involves more than writing down what we hope to do. [NIST SP 800-34](https://doi.org/10.6028/NIST.SP.800-34r1) addresses business impact analysis, recovery priorities, and testing. These technical considerations lead to a broader question: **how much of the eventual damage came from the event itself, and how much was made possible by the vulnerabilities of the system it struck?**
 
-![A conceptual comparison of a disruption without preparation and one encountered by previously tested recovery measures.](/images/failure-recovery-en.svg)
+![A conceptual comparison of how the same disruption may unfold with and without tested recovery measures.](/images/failure-recovery-en.svg)
 
-*The diagram compares possible consequences. It does not claim that any measure guarantees continuity or that the same failure always produces the same damage.*
+*The diagram compares possible consequences. It does not suggest that preventive measures guarantee continuity or that identical failures always cause identical losses.*
 
-[James Reason's systems approach to error and protective barriers](https://doi.org/10.1136/bmj.320.7237.768) broadens the insight: a system cannot depend entirely on every person being correct every time. It also matters how the system is organized to detect and contain failures.
+[James Reason's systems approach to human error](https://doi.org/10.1136/bmj.320.7237.768) extends this reasoning. A reliable system cannot assume that every person will always make the right decision. It also needs ways to catch mistakes, limit their consequences, and prevent one failure from setting off several others.
 
-The reasoning applies beyond technology without turning this essay into an infrastructure manual. A documentation mistake may be easier to correct before it creates regulatory or commercial consequences. A business that keeps reliable records of costs and obligations does not remove economic uncertainty, but it improves its ability to detect problems and respond. In each case, the important task is to locate **points where an early intervention could prevent several downstream consequences from unfolding**.
+The same reasoning extends beyond technology. A misleading label may be easier to correct before a product reaches customers than after a regulatory problem emerges. Reliable financial records do not eliminate commercial uncertainty, but they can make problems easier to detect and decisions easier to justify. In both cases, an intervention matters partly because of **the consequences it might prevent further down the line**.
 
-That does not mean constantly checking every remote possibility. Prevention also uses resources. A protective measure may reduce one risk while consuming money or attention that could have gone to another opportunity. A reasonable choice considers the potential severity of losses, their estimated likelihood, the cost of preventive measures, and the available alternatives. [Causal decision theory](https://plato.stanford.edu/entries/decision-causal/) addresses the broader question of evaluating the likely consequences of actions, rather than merely their apparent associations.
+But prevention is not an instruction to pursue every remotely imaginable danger. Safeguards cost money, time, and attention. A measure that reduces one risk may consume resources needed elsewhere. Sound judgment requires us to consider the severity of possible losses, the uncertainty surrounding them, the effectiveness and cost of precautions, and what we would forgo by taking them. [Causal decision theory](https://plato.stanford.edu/entries/decision-causal/) addresses the broader challenge of evaluating actions by their possible consequences rather than by superficial associations.
 
-Prevention contains a paradox: **when it works, it can look unnecessary**. If a check catches an error before it reaches the market, we will never observe the sequence of problems it might have caused. But we cannot say with certainty that the sequence would have happened either.
+Prevention also contains a paradox: **when it works, it can appear unnecessary**. If a review catches an error before a product reaches the market, we will never observe the problems that error might have caused. Yet we cannot claim with certainty that those problems would have occurred without the review.
 
-The difference between those claims is counterfactual. We observe the world in which a precaution was taken; we do not observe, for that very same case at the very same time, a world in which it was not. [Causal research](https://plato.stanford.edu/entries/causal-models/) offers ways to estimate effects through comparisons and models, but an isolated story cannot tell us exactly how much damage was avoided.
+This is a counterfactual problem. We observe what happened after a precaution was taken, but we cannot observe the very same case, at the very same time, without that precaution. [Causal research](https://plato.stanford.edu/entries/causal-models/) uses comparisons and models to estimate such effects. One anecdote, by itself, cannot tell us precisely how much harm was avoided.
 
-A sensible preventive measure does not need an invented, inevitable catastrophe to justify it. Its value may lie in reducing a real exposure, even if we never learn whether that exposure would have resulted in a loss.
+The value of prevention does not depend on inventing a disaster that was certain to occur. It may lie in reducing a genuine vulnerability, even when we never find out whether that vulnerability would have led to a loss.
 
-## Preparing for what we cannot yet foresee
+## Preparing for What We Cannot Foresee
 
-So far, we have considered risks we can identify: a critical dependency, a flawed procedure, a strategy that fails to produce its intended effect. We can examine them, form hypotheses about how they work, and decide where to intervene. But this reasoning meets a limit: **what happens when the event that matters is not even among the scenarios we have imagined?**
+So far, we have been dealing with risks we can name: a critical dependency, an unreliable procedure, or a strategy that fails to produce the desired result. We can study them and decide where to intervene. But there is a limit to this approach. **What if the event that matters most is not even among the possibilities we thought to consider?**
 
-In [*The Black Swan*](https://www.penguinrandomhouse.com/books/176226/the-black-swan-second-edition-by-nassim-nicholas-taleb/9780812973815/), Nassim Nicholas Taleb explores events that are exceptionally hard to anticipate beforehand, have an extraordinary impact, and seem much easier to explain after they occur. His point goes beyond reminding us that unlikely things happen. It raises a more unsettling possibility: we may be confident in our forecasts precisely because the model we rely on leaves out possibilities we do not yet know about.
+In [*The Black Swan*](https://www.penguinrandomhouse.com/books/176226/the-black-swan-second-edition-by-nassim-nicholas-taleb/9780812973815/), Nassim Nicholas Taleb examines events that are difficult to anticipate, have an enormous impact, and invite convincing explanations once they have happened. His argument is not merely that unlikely events occur. It also challenges the confidence we place in models that may exclude precisely the kinds of events capable of overturning our expectations.
 
-A black swan is not simply any infrequent incident. A server failure, for instance, usually belongs to a familiar class of problems for which recovery can reasonably be planned. Taleb's challenge is different: **what do we do when our list of risks is not a complete account of what could happen?** A probability estimate may be mathematically coherent within a model while failing to include a kind of event that radically changes the consequences.
+A black swan is not just any uncommon mishap. A server failure, for example, belongs to a familiar category of risks for which contingency measures can be designed. Taleb's more unsettling challenge is that **our list of conceivable risks may be incomplete**. A probability estimate can be mathematically sound within a model and still fail to account for possibilities the model never included.
 
-This changes what preparation can mean. Sometimes we can improve our estimates of an event's likelihood. At other times, the wiser strategy is to become less dependent on those estimates being right. We need not predict the precise cause of every disruption to value operational alternatives, limit critical dependencies, prevent local failures from spreading, or preserve recovery capacity. Such measures cannot promise protection against every surprise. They can make parts of a system less fragile.
+That changes what it means to prepare. Sometimes the right response is to refine our estimate of a particular risk. In other cases, it may be more sensible to make ourselves less dependent on that estimate being accurate. We can preserve alternatives, reduce critical dependencies, keep local failures from spreading, and protect our ability to recover without predicting the exact event that will test those measures.
 
-The philosophical implication matters here. **Building our possibilities is not the same as calculating every probability or removing the unpredictable.** It can also mean retaining room to act when we discover that our forecasts were incomplete.
+None of this makes us immune to surprise. It does, however, suggest a different kind of preparedness: **not knowing every threat in advance, but avoiding a situation in which one unexpected event leaves us with no room to respond**.
 
-Knowledge helps us intervene more effectively in what we understand. Caution about the unknown reminds us that not everything important is captured by what we know how to measure. Preparing for the future requires both: learning to distinguish concrete risks and avoiding a strategy that depends on having identified every one of them.
+This is where the essay's argument becomes more than an attempt to calculate favorable odds. Understanding what we can measure helps us make better decisions. Recognizing the limits of those measurements reminds us not to build everything on the assumption that our forecasts are complete. Shaping our future may mean acting more effectively on what we know while retaining the flexibility to face what we do not.
 
-## Learning does not change the world; what we do afterward might
+## Updating Our Beliefs Is Not the Same as Changing Outcomes
 
-Once we start trying to improve our outcomes deliberately, another difficulty appears: how can we tell whether a strategy is effective rather than merely associated with a good result?
+Once we start trying to improve our decisions deliberately, another question becomes unavoidable: how can we tell whether a strategy actually works, rather than merely coinciding with a favorable result?
 
-Suppose we believe a particular decision will help us reach a goal. We act on it and see a positive outcome. That is information, but not yet proof. Other factors may have produced the same result. Our approach may have helped, but only under certain conditions. Learning requires us to compare explanations rather than simply celebrate or regret an ending.
+Suppose we believe a particular action will help us reach a goal. We try it, and things go well. That tells us something, but not necessarily what we think. Other factors may have produced the outcome. The strategy might have helped under those circumstances but fail elsewhere. If we want to learn, we need to compare possible explanations instead of treating a single result as confirmation.
 
-[Bayesian epistemology](https://plato.stanford.edu/entries/epistemology-bayesian/) offers a formal framework for revising our confidence in a hypothesis as new evidence arrives. An observation is informative to the extent that it differs from what competing explanations would lead us to expect. Being compatible with our favored story is not enough; we must also ask whether it is compatible with the alternatives.
+[Bayesian epistemology](https://plato.stanford.edu/entries/epistemology-bayesian/) provides a formal account of how confidence in a hypothesis can change when new evidence appears. An observation is informative not merely because it fits our preferred explanation, but because of **how likely that observation would be under competing explanations**. Evidence that is equally likely either way gives us no reason to favor one over the other.
 
-The numbers in this interactive illustration are **hypothetical**. They show how beliefs can be updated; they do not measure the real-world probability of achieving a personal goal or the effectiveness of any particular strategy.
+The percentages in the interactive illustration below are **hypothetical**. The purpose is to show how an observation can strengthen, weaken, or leave unchanged our confidence in a hypothesis. The chart does not estimate anyone's actual chances of success or prove that a particular strategy is effective.
 
 <iframe src="/interactive/bayes-en.html" title="Interactive demonstration of Bayesian updating with hypothetical numbers" loading="lazy" width="100%" height="830" style="height:clamp(720px, calc(1050px - 50vw), 830px);border:0;display:block;max-width:100%;background:#fbf9f5" sandbox="allow-scripts"></iframe>
 
-A crucial distinction follows. Changing what we believe does not, on its own, change the world. But it may change our next choice: which variable we investigate, which method we abandon, what experiment we run, or which safeguard we introduce. Then learning becomes part of an intervention.
+There is a crucial difference between learning something and changing the conditions that produce an outcome. Updating a belief does not, by itself, alter the world. But it can change what we do next: which assumption we test, which method we abandon, which experiment we run, or which safeguard we put in place. **Evidence can improve our decisions; our decisions are what may change the conditions we face.**
 
-One decision can also serve more than one purpose. Writing to explain an idea forces us to organize it and test its coherence. The resulting work may later reach people we would never otherwise have met. Studies of [writing to learn](https://doi.org/10.3102/0034654320914744) have found benefits in educational contexts; they do not, by themselves, establish what will happen with any adult's blog. Still, we can distinguish two kinds of value. The first is immediate: understanding an idea better by trying to explain it. The second remains open: the work might later be read, challenged, or lead to conversations we could not have anticipated.
+A single activity can also create several kinds of value. Writing an essay to explain an idea may force us to organize our reasoning, identify gaps, and rethink assumptions we had taken for granted. The finished essay might eventually reach someone we would otherwise never have met. Studies of [writing as a way to learn](https://doi.org/10.3102/0034654320914744) have found benefits in educational settings, although they do not establish what any particular adult will gain from publishing a blog.
 
-Not every valuable choice gives us the result we originally imagined. Some increase what we know; others expand the options from which we will choose later.
+The distinction is still useful. One benefit can be immediate: understanding an idea more clearly through the effort of explaining it. Another remains uncertain: the work might later prompt a conversation, attract criticism that improves the argument, or make a new connection possible. Its value does not have to depend entirely on that future event.
 
-## Did we decide well, or did it just turn out well?
+Not every worthwhile decision produces the result we first had in mind. Some improve what we know. Others leave us with more possibilities when the next decision arrives.
 
-Perhaps the hardest problem emerges at the end, when the outcome is already known. Success can make a strategy seem brilliant. Loss can retrospectively turn a reasonable decision into an alleged mistake.
+## Was It a Good Decision, or Just a Good Outcome?
 
-Jonathan Baron and John Hershey studied this [outcome bias](https://doi.org/10.1037/0022-3514.54.4.569): learning that an outcome was favorable can lead people to evaluate the preceding decision more positively. The quality of the decision process and the quality of the result begin to look like the same thing.
+One of the hardest judgments comes after everything is over. A successful result can make an ordinary strategy seem brilliant. A loss can make a carefully considered choice look foolish.
 
-Imagine two people facing a risk. One evaluates the available evidence, considers alternatives, and makes a reasonable choice, yet experiences an adverse outcome. The other ignores relevant information and gets a favorable result. Looking only at the endings, we might declare the second person the better decision-maker.
+Jonathan Baron and John Hershey studied this tendency in their work on [outcome bias](https://doi.org/10.1037/0022-3514.54.4.569). Knowing that a decision turned out well can lead people to evaluate the decision itself more favorably. The quality of the choice and the quality of its outcome start to blur together.
 
-But decisions are made from the present toward the future, not from the future toward the past. To assess one, we need to ask what could reasonably have been known, which alternatives existed, and which risks were being accepted **before** the outcome.
+Imagine two people facing the same kind of risk. One weighs the evidence, considers alternatives, and makes a reasonable decision, only to suffer a loss. The other overlooks important information, takes an unnecessary risk, and comes away with a favorable result. If we judge them by the ending alone, we may conclude that the second person decided better.
 
-That does not make the process immune to later evidence. If the same approach repeatedly performs worse than expected, the assumptions behind it deserve scrutiny. Careful evaluation needs both: judging a choice in light of the information available at the time and learning from what happened afterward.
+But **we make decisions without the benefit of knowing how they will turn out**. To judge a choice fairly, we have to return to the information available at the time, the alternatives that could reasonably have been considered, and the risks being accepted.
 
-We can now put the essay's central tension more precisely. If we attribute everything to luck, we stop looking for opportunities to intervene. If we attribute everything to our decisions, we deny uncertainty, unequal resources, and the influence of other people. The title **“Neither Good Nor Bad Luck”** need not resolve the tension by literally denying chance. It can challenge how readily we turn luck into a complete explanation.
+That does not mean outcomes are irrelevant. If a strategy consistently performs worse than expected, its assumptions deserve to be questioned. A thoughtful evaluation requires both perspectives: assessing whether a decision made sense *before* the result and using what happened *afterward* to improve future decisions.
 
-## Before we know what will happen
+We can now see the tension behind the title *Beyond Good and Bad Luck*. If we explain everything through luck, we neglect the conditions we might have changed. If we explain everything through individual decisions, we ignore uncertainty, unequal opportunities, and other people's influence. Moving beyond the labels does not require denying chance. It means refusing to let either label do all the explanatory work.
 
-There is no universal percentage that measures how much of our future we can build. It depends on our goals, context, resources, available knowledge, and other people's choices. Nor is there a strategy that makes every probability more favorable: some interventions require giving up others, and some uncertainties cannot be reduced with the information we have.
+## Before We Know What Will Happen
 
-But that does not make us spectators. We can learn something that changes the questions we are capable of asking. Choose an environment that exposes us to unfamiliar ideas. Revisit an assumption before spending years repeating it. Build a safeguard so that one mistake does not destroy everything that depends on it. Create work whose value extends beyond an immediate reward.
+There is no universal percentage that tells us how much of our future we can shape. It depends on what we are trying to do, the resources and knowledge available to us, the circumstances we face, and the decisions others make. Nor can we make every probability more favorable at once. Some interventions involve trade-offs, and some uncertainty remains beyond our ability to measure or reduce.
 
-These decisions are not united by a guarantee of success. They reflect a way of relating to the future: **recognizing what we can influence, checking whether our interventions work, and retaining the capacity to respond when reality exceeds our forecasts**.
+Still, we are not merely spectators. We can learn something that changes which questions we know to ask. Enter a setting that exposes us to unfamiliar ideas. Reconsider a method before spending years repeating it. Build safeguards so that one mistake does not destroy everything that depends on them. Create work whose value extends beyond an immediate reward.
 
-Perhaps luck will remain a useful word for certain unexpected encounters. But it should not prevent us from asking why we were there to have them, what allowed us to recognize their value, or what we did afterward.
+What connects these choices is not a guarantee of success. It is a way of approaching the future: **identifying where we have influence, finding out whether our actions are effective, and preserving the ability to respond when events defy our expectations**.
 
-We cannot fully choose what will happen to us. We can, however, help build the conditions in which it happens. We can also develop the capacities with which we respond when it does.
+Luck may remain a useful word for what surprises us. But it should not stop us from wondering why we were in a position to encounter an opportunity, what allowed us to recognize it, or what we did once it appeared.
+
+We cannot choose everything that happens to us. We can help shape some of the conditions in which it happens, and develop the capacities we will need to respond when it does.
 
 ## References
 

@@ -39,10 +39,10 @@ are reserved unless stated otherwise:
 - **Knowledge paths diagram (EN/ES):** original conceptual illustration created for the essay
   "When Understanding Isn't Enough". It is an explanatory synthesis, not a validated model.
 - **Conditions-for-learning and failure-recovery diagrams (EN/ES):** original conceptual
-  illustrations created for the essay "Neither Good Nor Bad Luck". They are conceptual
+  illustrations created for the essay "Beyond Good and Bad Luck". They are conceptual
   figures, not validated models.
 - **Valley of paths (cover, `valley-of-paths-cover.jpg`):** illustration supplied by the author for the
-  essay "Neither Good Nor Bad Luck". It does not reproduce any photograph or third-party image.
+  essay "Beyond Good and Bad Luck". It does not reproduce any photograph or third-party image.
 
 ## Fonts and libraries
 
