@@ -1,7 +1,7 @@
 ---
 title: "Ni buena ni mala suerte"
 description: "Qué podemos cambiar antes de conocer el resultado: causalidad, aprendizaje, oportunidades y el valor invisible de prevenir."
-pubDate: 2026-10-30
+pubDate: 2026-10-20
 translationKey: "neither-good-nor-bad-luck"
 category: "filosofía"
 shareExcerpt: "No elegimos todos los acontecimientos. Pero sí podemos cambiar las condiciones que encuentran cuando llegan y las posibilidades que sabemos reconocer."

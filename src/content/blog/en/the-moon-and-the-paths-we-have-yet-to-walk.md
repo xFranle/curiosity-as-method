@@ -1,7 +1,7 @@
 ---
 title: The Moon and the Paths We Have Yet to Walk
 description: On the quiet company of the Moon, the lives we remember, and the possibilities we are finally ready to live.
-pubDate: 2026-11-07
+pubDate: 2026-10-28
 translationKey: the-moon-and-the-paths-we-have-yet-to-walk
 category: philosophy
 shareExcerpt: The Moon has accompanied the paths we've already walked. What about the parts of our lives we have long known were possible, but have yet to experience?

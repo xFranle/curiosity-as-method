@@ -1,7 +1,7 @@
 ---
 title: "Beyond Good and Bad Luck"
 description: "What our choices can change, even when we cannot predict the outcome."
-pubDate: 2026-10-30
+pubDate: 2026-10-20
 translationKey: "neither-good-nor-bad-luck"
 category: "philosophy"
 shareExcerpt: "We cannot predict every outcome, but we can shape some of the conditions that make opportunities possible and losses less destructive."

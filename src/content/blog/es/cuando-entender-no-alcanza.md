@@ -1,7 +1,7 @@
 ---
 title: Cuando entender no alcanza
 description: Comprender una idea no significa necesariamente haber aprendido a pensar con ella.
-pubDate: 2026-10-10
+pubDate: 2026-09-30
 translationKey: when-understanding-isnt-enough
 category: psicología
 shareExcerpt: Podemos comprender una idea en el momento en que la encontramos y, aun así, no reconocerla cuando la realidad vuelve a presentárnosla.

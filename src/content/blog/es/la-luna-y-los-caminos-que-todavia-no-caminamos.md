@@ -1,7 +1,7 @@
 ---
 title: La luna y los caminos que todavía no caminamos
 description: Sobre la compañía silenciosa de la luna, las noches que recordamos y las posibilidades que finalmente podemos empezar a vivir.
-pubDate: 2026-11-07
+pubDate: 2026-10-28
 translationKey: the-moon-and-the-paths-we-have-yet-to-walk
 category: filosofía
 shareExcerpt: La luna acompañó los caminos que ya recorrimos. ¿Qué ocurre con aquellos lugares de nuestra vida que siempre supimos posibles, pero todavía no habíamos llegado a vivir?
