@@ -43,6 +43,19 @@ are reserved unless stated otherwise:
   figures, not validated models.
 - **Valley of paths (cover, `valley-of-paths-cover.jpg`):** illustration supplied by the author for the
   essay "Beyond Good and Bad Luck". It does not reproduce any photograph or third-party image.
+- **Images of the essay "Interest or Curiosity"**, obtained from Pixabay and Pexels under their
+  respective content licenses (free to use, attribution not required; credited anyway). They are
+  not the author's own work and are **not** covered by the blog's rights notice:
+  - `01-information-gap.svg`: *Silhouette of man with question marks* by Mohamed_hassan,
+    [Pixabay](https://pixabay.com/vectors/questions-question-mark-quiz-3686724/)
+    ([license](https://pixabay.com/service/license-summary/)). The vector was cropped to the
+    drawing and given a plain cream background.
+  - `02-interpersonal-curiosity.webp`: photograph by Han-Chieh Lee,
+    [Pexels](https://www.pexels.com/photo/sidewalk-in-park-22775934/)
+    ([license](https://www.pexels.com/license/)). Resized and converted to WebP.
+  - `03-metacognition.webp`: *Two head silhouettes with gear brains* by TheDigitalArtist,
+    [Pixabay](https://pixabay.com/illustrations/thought-mind-communication-brain-4521081/)
+    ([license](https://pixabay.com/service/license-summary/)). Resized and converted to WebP.
 
 ## Fonts and libraries
 
