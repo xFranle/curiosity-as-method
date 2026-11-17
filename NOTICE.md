@@ -57,6 +57,22 @@ are reserved unless stated otherwise:
     [Pixabay](https://pixabay.com/illustrations/thought-mind-communication-brain-4521081/)
     ([license](https://pixabay.com/service/license-summary/)). Resized and converted to WebP.
 
+- **Paintings of the essay "What If You're the One Who Doesn't Get It?"**: all three works are in
+  the public domain. They are not the author's own work and are **not** covered by the blog's
+  rights notice:
+  - `holbein-the-ambassadors.jpg`: Hans Holbein the Younger, *The Ambassadors* (1533), National
+    Gallery, London. Reproduction from
+    [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Holbein_Ambassadors.jpg)
+    (Public domain); resized for the web.
+  - `caravaggio-narcissus.jpg`: *Narcissus*, attributed to Caravaggio (around 1599), Galleria
+    Nazionale d'Arte Antica, Rome. Reproduction from
+    [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Michelangelo_Merisi_da_Caravaggio_-_Narcissus_-_WGA04109.jpg)
+    (Public domain), included unmodified.
+  - `rembrandt-aristotle-homer.jpg`: Rembrandt, *Aristotle with a Bust of Homer* (1653), The
+    Metropolitan Museum of Art, New York (61.198), Open Access, CC0
+    ([museum record](https://www.metmuseum.org/art/collection/search/437394)); resized for
+    the web.
+
 ## Fonts and libraries
 
 Geist and Geist Mono (SIL Open Font License, via Fontsource), Astro, React, Tailwind CSS,
